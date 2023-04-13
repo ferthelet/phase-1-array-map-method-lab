@@ -1,3 +1,5 @@
+// js
+
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Constructor OO pattern?',
@@ -11,12 +13,19 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
-
 // Create a new array containing the names of the tutorials with proper
 // title case formatting
-function titledCased() {
-  
+// double map
+
+const titleCased = () => {
+  return [...tutorials].map((tutorial) => {
+    const words = tutorial.split(' ').map((word) => {
+      return word.replace(word.at(0), word.charAt(0).toUpperCase());
+    });
+    return words.toString().replaceAll(',', ' ');
+  });
 }
+
+// testing
+// console.log(tutorials);
+// console.log(titleCased());
