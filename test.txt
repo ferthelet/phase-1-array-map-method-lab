@@ -1,0 +1,48 @@
+
+> javascript-lab@1.0.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  index.js
+    titleCased()
+      1) returns an array with title case tutorial names
+
+
+  0 passing (283ms)
+  1 failing
+
+  1) index.js
+       titleCased()
+         returns an array with title case tutorial names:
+
+      AssertionError: expected [ Array(10) ] to have the same members as [ Array(10) ]
+      + expected - actual
+
+       [
+      -  "what does the this keyword mean?"
+      -  "What is the Constructor OO pattern?"
+      -  "implementing Blockchain Web API"
+      +  "What Does The This Keyword Mean?"
+      +  "What Is The Constructor OO Pattern?"
+      +  "Implementing Blockchain Web API"
+         "The Test Driven Development Workflow"
+      -  "What is NaN and how Can we Check for it"
+      -  "What is the difference between stopPropagation and preventDefault?"
+      -  "Immutable State and Pure Functions"
+      -  "what is the difference between == and ===?"
+      -  "what is the difference between event capturing and bubbling?"
+      -  "what is JSONP?"
+      +  "What Is NaN And How Can We Check For It"
+      +  "What Is The Difference Between StopPropagation And PreventDefault?"
+      +  "Immutable State And Pure Functions"
+      +  "What Is The Difference Between == And ===?"
+      +  "What Is The Difference Between Event Capturing And Bubbling?"
+      +  "What Is JSONP?"
+       ]
+      
+      at Context.<anonymous> (test/indexTest.js:6:40)
+      at process.processImmediate (node:internal/timers:476:21)
+
+
+

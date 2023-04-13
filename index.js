@@ -14,3 +14,9 @@ const tutorials = [
 const titleCased = () => {
   return tutorials
 }
+
+// Create a new array containing the names of the tutorials with proper
+// title case formatting
+function titledCased() {
+  
+}
